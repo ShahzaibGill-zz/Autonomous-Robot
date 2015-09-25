@@ -1,7 +1,7 @@
 # LEGO Grab and Retrieve Robot
 Autonomous Grab and Retrieve Robot made using LEGO Mindstorms and C
 
-![ScreenShot](https://raw.githubusercontent.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/full%20robot%202.jpg)
+![ScreenShot](https://github.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/full%20robot%202.jpg?raw=true)
 
 ## Tasks Preformed by the Robot
 1. Robot searches for blocks by rotating
@@ -17,13 +17,13 @@ Autonomous Grab and Retrieve Robot made using LEGO Mindstorms and C
 ### Contraints and Limitation 
 The Lego MindStorms limited the number of motors that can be connected and operated at one time. Thus, to operate the clamp mechanism with one motor
 a gear system was designed to operate two clamps symmetrically. <br />
-![ScreenShot](https://raw.githubusercontent.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/Clamping%20mechanism%202.jpg)
-![ScreenShot](https://raw.githubusercontent.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/Clamping%20mechanism.jpg)
-![ScreenShot](https://raw.githubusercontent.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/robot%20after%20clamp%20.jpg)
+![ScreenShot](https://github.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/Clamping%20mechanism%202.jpg?raw=true)
+![ScreenShot](https://github.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/Clamping%20mechanism.jpg?raw=true)
+![ScreenShot](https://github.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/robot%20after%20clamp%20.jpg?raw=true)
 
 ## Block designs
 Various block designs were tested to optimize sensor detection. Overall, flat surfaces are best detected by the ultrasonic sensors as expected
-![ScreenShot](https://raw.githubusercontent.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/various%20clamp%20designs.jpg)
+![ScreenShot](https://github.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/various%20clamp%20designs.jpg?raw=true)
 
 
 The code is designed to work with 2 ultrasonic sensors and 2 light intensity sensors.
