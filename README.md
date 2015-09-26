@@ -1,39 +1,24 @@
 # LEGO Grab and Retrieve Robot
-Autonomous Grab and Retrieve Robot made using LEGO Mindstorms and C
+Autonomous Grab and Retrieve Robot made using LEGO Mindstorms and Robot C
 
 ![ScreenShot](https://github.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/full%20robot%202.jpg?raw=true)
 
-## Tasks Preformed by the Robot
-1. Robot searches for blocks by rotating
-2. Upon detection it begins to approach the object
-3. After clamping onto the object, the robot searches for the disposal site
-4. Subsequently, after reaching the desired location, the block is dropped and the robot continues to search for more blocks
-6. If no block are found for several rotation or after 10 seconds, the robot shuts down as the task has been completed
+## What does the Robot do?
 
-## Sensor Configuration
-* The code is designed to work with 2 ultrasonic sensors and 2 light intensity sensors
-* The ultrasonic sensors should be placed so that one can detect **blocks** _(Placed lower and closer to the ground)_, while the other can detect the **disposal location** _(location marked by a flag 30cm high)_
+The autonomous robot searches for "garbage" by rotating 360 degrees. After detection of an object using the ultrasonic sensors, the robot stops the rotation and approaches the object. After approaching the object, the robot stops, clamps the object, and rotates again in order to search for the target disposal site. The robot then approaches the disposal location and drops off the object.
 
-### Contraints and Limitation 
-The Lego MindStorms limited the number of motors that can be connected and operated at one time. Thus, to operate the clamp mechanism with one motor
-a gear system was designed to operate two clamps symmetrically. <br />
+## Sensors and Design
+
+1. Ultrasonic Sensor placed near the ground is used for detecting object
+2. Ultasonic Sensor placed higher up is used to locate the target disposal location - indicated by a flag
+3. Two intensity Sensors to ensure the robot stays within a set environment and does not fall into the disposal location hole
+
+Since Lego Mindstorm is limited to 3 motors, and 2 motors are used for movement (linear and rotational), only one motor was used to both clamp and lift the object off the ground. This was done through innovative mechanical design, where the motor would spin until the object is clamped (and the clamping gear is locked). The locked clamping gears would then cause the preceding gears to become rigid, and the arm lifts up.
+
+## Block design and 3D Printed components
+![ScreenShot](https://github.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/various%20clamp%20designs.jpg?raw=true)
+
+## Additional Pictures
 ![ScreenShot](https://github.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/Clamping%20mechanism%202.jpg?raw=true)
 ![ScreenShot](https://github.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/Clamping%20mechanism.jpg?raw=true)
 ![ScreenShot](https://github.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/robot%20after%20clamp%20.jpg?raw=true)
-
-## Block designs
-Various block designs were tested to optimize sensor detection. Overall, flat surfaces are best detected by the ultrasonic sensors as expected
-![ScreenShot](https://github.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/various%20clamp%20designs.jpg?raw=true)
-
-
-The code is designed to work with 2 ultrasonic sensors and 2 light intensity sensors.
-The ultrasonic sensors should be placed so that one can detect blocks.
-Thus, 1) Placed lower and closer to the ground
-      2) Detect a flag at the disposal site. To avoid interference with the blocks, both the
-         sensor and flag should be at a greater height
-
-The intensity sensors can be placed any where in the front of the robot
-The chassis is also open to your imagination
-Finally, the Lego MindStorms limit the use of 3 motors. Thus, to operate the clamp with one motor
-a gear mechanism can be created to operate two claws symmetrically. This can be seen in the pictures 
-in this repo.

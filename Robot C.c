@@ -2,11 +2,9 @@
 Shahzaib Gill, Devansh Vaid, Md Tahsin Sharif, Mark Rakov
 
 ~~~~~~~~~~~Grab and Retrieve Autonomous Lego~~~~~~~~~~~~~
--Robot searches for block
--Upon detection it begins to approach the object
--After clamping onto the object, the robot searches for the disposal site
--Subsequently, after reaching the desired location, the block is dropped
- and the robot continues to search for more blocks
+-Robot searches for objects and upon detection, begins to approach the object
+-After clamping onto the object, the robot searches for the disposal site, and after reaching it, drops the object
+-The Robot then searches for more blocks
 -If no block are found for several rotation or after 10 seconds, the robot
  shuts down as the task has been completed
  
@@ -34,7 +32,7 @@ void turn()
             motor[motorA] = 0;
             motor[motorB] = 0;
             wait1Msec(200);
-            if(SensorValue[S1] != 255) /display used for testing
+            if(SensorValue[S1] != 255) //display used for testing
             {
                 n++;
                 nxtDisplayString(2,"%i",SensorValue[S1]);
@@ -163,7 +161,7 @@ void findFlag(int flagDistance)
     }
           
           void Drop()
-          //prevent robot from falling into hole -color sensor on front
+          //prevent robot from falling into hole -intensity sensor on front
     {
         motor[motorA] = -25;
         motor[motorB] = 25;
