@@ -1,5 +1,5 @@
-# LEGO Grab and Retrieve Robot
-Autonomous Grab and Retrieve Robot made using LEGO Mindstorms and Robot C
+# Autonomous Garbage Disposer Robot
+Autonomous Garbage Disposer Robot made using LEGO Mindstorms and Robot C
 
 ![ScreenShot](https://github.com/ShahzaibGill/Autonomous-Robot/blob/master/Lego%20Robot%20Pictures/full%20robot%202.jpg?raw=true)
 
